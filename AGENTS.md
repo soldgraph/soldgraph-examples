@@ -1,6 +1,6 @@
 # Using the Soldgraph API (notes for coding agents)
 
-Soldgraph is a REST API for resale marketplace data: eBay, Poshmark and Mercari sold and active listings; Depop, Whatnot and OfferUp active listings; TCGplayer product search and recent sales. US only.
+Soldgraph is a REST API for resale marketplace data: eBay, Poshmark and Mercari sold and active listings; Depop, Whatnot, OfferUp and Facebook Marketplace active listings; TCGplayer product search and recent sales. US only.
 
 - Base URL `https://api.soldgraph.com/v1`. Every route is `GET`.
 - Auth: `Authorization: Bearer <key>`. Read the key from `SOLDGRAPH_KEY`. Keep it server-side.
@@ -34,6 +34,7 @@ Both expose `search(path, params)` and return `result`, handling polling, retrie
 | `/depop/listings` | Depop active |
 | `/whatnot/listings` | Whatnot active Buy It Now |
 | `/offerup/listings`, `/offerup/item` | OfferUp local active, listing detail |
+| `/facebook/listings`, `/facebook/item` | Facebook Marketplace local active (`zip` or `lat`/`lon`), listing detail |
 | `/tcgplayer/search`, `/tcgplayer/sales` | TCGplayer products, recent sales sample |
 
 Replacing eBay's retired `findCompletedItems`? See [`findcompleteditems-migration/`](findcompleteditems-migration/).

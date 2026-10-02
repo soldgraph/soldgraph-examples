@@ -1,6 +1,6 @@
 # Soldgraph API examples
 
-Copy-paste examples for the [Soldgraph](https://soldgraph.com?utm_source=github&utm_medium=referral&utm_campaign=soldgraph-examples) resale data API: eBay, Poshmark and Mercari **sold listings** as JSON, plus active listings from Depop, Whatnot and OfferUp and TCGplayer card prices.
+Copy-paste examples for the [Soldgraph](https://soldgraph.com?utm_source=github&utm_medium=referral&utm_campaign=soldgraph-examples) resale data API: eBay, Poshmark and Mercari **sold listings** as JSON, plus active listings from Depop, Whatnot, OfferUp and Facebook Marketplace and TCGplayer card prices.
 
 Use it to replace eBay's retired `findCompletedItems`. You don't need an eBay developer account.
 
@@ -18,8 +18,8 @@ for row in result["data"]:
 
 | Folder | What it shows |
 | --- | --- |
-| [`python/`](python/) | Client, eBay sold prices with a median, eBay vs Poshmark vs Mercari |
-| [`node/`](node/) | Client (Node 18+, no dependencies), sold prices, paging through results |
+| [`python/`](python/) | Client, eBay sold prices with a median, eBay vs Poshmark vs Mercari, Facebook Marketplace near a ZIP code |
+| [`node/`](node/) | Client (Node 18+, no dependencies), sold prices, paging through results, Facebook Marketplace near a ZIP code |
 | [`curl/`](curl/) | Search and poll from the shell with `jq` |
 | [`google-sheets/`](google-sheets/) | `=SOLDGRAPH_SOLD("item")` custom function |
 | [`findcompleteditems-migration/`](findcompleteditems-migration/) | Move off eBay's Finding API, with a field mapping |
@@ -49,6 +49,6 @@ A search either returns its result right away or a job to poll. The clients in `
 - [Docs](https://soldgraph.com/docs?utm_source=github&utm_medium=referral&utm_campaign=soldgraph-examples) · [Quickstart](https://soldgraph.com/docs/quickstart?utm_source=github&utm_medium=referral&utm_campaign=soldgraph-examples) · [OpenAPI](https://soldgraph.com/openapi.json) · [llms.txt](https://soldgraph.com/llms.txt)
 - [Marketplaces](https://soldgraph.com/docs/marketplaces?utm_source=github&utm_medium=referral&utm_campaign=soldgraph-examples) · [How prices work](https://soldgraph.com/docs/how-prices-work?utm_source=github&utm_medium=referral&utm_campaign=soldgraph-examples) · [Rate limits](https://soldgraph.com/docs/api/rate-limits?utm_source=github&utm_medium=referral&utm_campaign=soldgraph-examples)
 
-Soldgraph is not affiliated with eBay, Poshmark, Mercari, Depop, Whatnot, OfferUp or TCGplayer.
+Soldgraph is not affiliated with eBay, Poshmark, Mercari, Depop, Whatnot, OfferUp, Facebook or TCGplayer.
 
 MIT licensed.
