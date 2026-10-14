@@ -73,4 +73,4 @@ Combine conditions with commas, like `condition=new,open_box`.
 - **US only.** eBay US today.
 - **Other marketplaces.** The same call shape works for Poshmark and Mercari sold listings: `/v1/poshmark/sold`, `/v1/mercari/sold`.
 
-Free plan: 100 requests a month, no card. [Get a key](https://soldgraph.com/signup?utm_source=github&utm_medium=referral&utm_campaign=soldgraph-examples) · [Full guide](https://soldgraph.com/docs/compare/ebay-finding-api?utm_source=github&utm_medium=referral&utm_campaign=soldgraph-examples)
+100 free requests to start, no credit card required. [Get a key](https://soldgraph.com/signup?utm_source=github&utm_medium=referral&utm_campaign=soldgraph-examples) · [Full guide](https://soldgraph.com/docs/compare/ebay-finding-api?utm_source=github&utm_medium=referral&utm_campaign=soldgraph-examples)
